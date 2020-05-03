@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  gps_api:
+    build: ./gps_api
+    restart: always
+    ports:
+      - 8080:8080
+    environment: 
+      - PORT=8080
+      - RESPONSE_MAXSIZE=20
+      - LANG=fr
+      - DISTANCE=5000
+      - TYPE=restaurant,bar,hotel
+      - APIURL=https://discover.search.hereapi.com/v1/discover
+      - APIKEY=TX51ICN1EOc2ZwY1QOtN8gNwsk7Tg23whsDXS0x6RkQ
