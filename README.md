@@ -2,6 +2,7 @@
 
 # gps_api
 adress:port(default: 8080)/gps/
+Example: 127.0.0.1:8080/gps/?long=50.665540&lat=3.104470
 params: long, lat
 longitude / latitude, format : DD
 return: `200 + Template or 'no result' / 400 + Missing or wrong parameter`
